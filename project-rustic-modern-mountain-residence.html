@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rustic Modern Mountain Residence – Tamara Ilkovska</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+        name="description"
+        content="Rustic Modern Mountain Residence – a new-build house in Slovenia designed by Tamara Ilkovska."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles-project.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-mark">TI</span>
+                <span class="logo-text">Tamara Ilkovska</span>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html#about" data-i18n="nav.about"></a>
+                <a href="index.html#services" data-i18n="nav.services"></a>
+                <a href="index.html#featured-project" data-i18n="nav.featured"></a>
+                <a href="index.html#contact" data-i18n="nav.contact"></a>
+            </nav>
+
+            <div class="header-controls">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="mk">MK</button>
+                <button class="lang-btn" data-lang="sl">SL</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PROJECT HERO -->
+        <section class="section project-hero">
+            <div class="container two-column project-hero-layout">
+                <div>
+                    <p class="eyebrow" data-i18n="project.eyebrow"></p>
+                    <h1 class="project-title" data-i18n="project.title"></h1>
+
+                    <div class="project-meta">
+                        <div class="project-meta-item">
+                            <span class="project-meta-label" data-i18n="project.locationLabel"></span>
+                            <span class="project-meta-value" data-i18n="project.locationValue"></span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label" data-i18n="project.scopeLabel"></span>
+                            <span class="project-meta-value" data-i18n="project.scopeValue"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <p data-i18n="project.description1"></p>
+                    <p data-i18n="project.description2"></p>
+
+                    <div class="project-links">
+                        <a href="https://www.bcr.si/portfolio/interier-nn/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-reference-link"
+                           data-i18n="project.referenceLink"></a>
+
+                        <a href="index.html#featured-project"
+                           class="project-back-link"
+                           data-i18n="project.backLink"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMAGE GRID -->
+        <section class="section project-gallery">
+            <div class="container">
+                <div class="image-grid">
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-01.jpg"
+                            alt="Bedroom with warm wood walls, soft textiles and large artwork"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-02.jpg"
+                            alt="Entrance console with live-edge wood and dark slatted wall"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-03.jpg"
+                            alt="Kitchen with grey island, wood cabinetry and sculptural lighting"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-04.jpg"
+                            alt="Lounge area with armchairs, cowhide artwork and slatted divider"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-05.jpg"
+                            alt="Bedroom with full-height window overlooking landscape"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-06.jpg"
+                            alt="Dining space with sculptural chandelier and long table"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="image-grid-item">
+                        <img
+                            src="images/rustic-07.jpg"
+                            alt="Bathroom with wood and stone finishes and minimal fixtures"
+                            loading="lazy"
+                        />
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> Tamara Ilkovska</span>
+            <span class="footer-note" data-i18n="footer.note"></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

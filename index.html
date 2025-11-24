@@ -9,7 +9,7 @@
         content="Portfolio of Tamara Ilkovska – interior designer specializing in residential spaces, 3D visualization and technical drawings."
     />
 
-    <!-- Google Font (optional, elegant & minimal) -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
         rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-index.css" />
 </head>
 <body>
     <header class="site-header">
@@ -30,7 +30,7 @@
             <nav class="main-nav">
                 <a href="#about" data-i18n="nav.about"></a>
                 <a href="#services" data-i18n="nav.services"></a>
-                <a href="#projects" data-i18n="nav.projects"></a>
+                <a href="#featured-project" data-i18n="nav.featured"></a>
                 <a href="#contact" data-i18n="nav.contact"></a>
             </nav>
 
@@ -52,15 +52,19 @@
                     <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
 
                     <div class="hero-actions">
-                        <a href="#projects" class="btn primary" data-i18n="hero.viewProjects"></a>
+                        <a href="#featured-project" class="btn primary" data-i18n="hero.viewProjects"></a>
                         <a href="#contact" class="btn ghost" data-i18n="hero.contact"></a>
                     </div>
                 </div>
 
                 <div class="hero-image-placeholder">
-                    <!-- Replace with a real image later if you want -->
                     <div class="hero-frame">
-                        <span class="hero-label" data-i18n="hero.imageLabel"></span>
+                        <img
+                            src="images/rustic-02.jpg"
+                            alt="Rustic modern interior preview"
+                            loading="lazy"
+                            class="hero-image"
+                        />
                     </div>
                 </div>
             </div>
@@ -107,42 +111,60 @@
             </div>
         </section>
 
-        <!-- PROJECTS (PLACEHOLDERS) -->
-        <section id="projects" class="section">
+        <!-- FEATURED PROJECT -->
+        <section id="featured-project" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2 data-i18n="projects.title"></h2>
-                    <p class="section-subtitle" data-i18n="projects.subtitle"></p>
+                <div class="section-header featured-header">
+                    <div>
+                        <p class="eyebrow" data-i18n="featured.eyebrow"></p>
+                        <h2 data-i18n="featured.title"></h2>
+                    </div>
+                    <div class="featured-meta">
+                        <span class="featured-location-label" data-i18n="featured.locationLabel"></span>
+                        <span class="featured-location-value" data-i18n="featured.locationValue"></span>
+                    </div>
                 </div>
 
-                <div class="grid projects-grid">
-                    <!-- Placeholder cards until you add real projects -->
-                    <article class="card project-card">
-                        <div class="project-image-placeholder"></div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.placeholder1.title"></h3>
-                            <p data-i18n="projects.placeholder1.body"></p>
-                            <span class="project-tag" data-i18n="projects.tag.comingSoon"></span>
-                        </div>
-                    </article>
+                <div class="two-column featured-layout">
+                    <div class="featured-text">
+                        <h3 class="featured-name" data-i18n="featured.projectName"></h3>
+                        <p class="featured-description" data-i18n="featured.description"></p>
 
-                    <article class="card project-card">
-                        <div class="project-image-placeholder"></div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.placeholder2.title"></h3>
-                            <p data-i18n="projects.placeholder2.body"></p>
-                            <span class="project-tag" data-i18n="projects.tag.comingSoon"></span>
+                        <div class="featured-actions">
+                            <a href="project-rustic-modern-mountain-residence.html" class="btn primary" data-i18n="featured.viewProject"></a>
+                            <a href="https://www.bcr.si/portfolio/interier-nn/"
+                               class="btn ghost"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               data-i18n="featured.referenceLink"></a>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card project-card">
-                        <div class="project-image-placeholder"></div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.placeholder3.title"></h3>
-                            <p data-i18n="projects.placeholder3.body"></p>
-                            <span class="project-tag" data-i18n="projects.tag.comingSoon"></span>
+                    <div class="featured-preview-grid">
+                        <div class="featured-preview-large">
+                            <img
+                                src="images/rustic-01.jpg"
+                                alt="Rustic modern bedroom interior with warm wood and soft textiles"
+                                loading="lazy"
+                            />
                         </div>
-                    </article>
+                        <div class="featured-preview-small-grid">
+                            <div class="featured-preview-small">
+                                <img
+                                    src="images/rustic-02.jpg"
+                                    alt="Entrance console with live-edge wood and dark slatted wall"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="featured-preview-small">
+                                <img
+                                    src="images/rustic-03.jpg"
+                                    alt="Warm kitchen with wood cabinetry and grey island"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
